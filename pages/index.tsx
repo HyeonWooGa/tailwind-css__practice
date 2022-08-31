@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
         <div className="bg-blue-500 p-6 pb-24 flex items-center justify-between">
           <span className="text-white text-2xl">Profile</span>
-          <span>Cart</span>
+          <span className="text-white">Cart</span>
         </div>
         <div className="rounded-3xl p-7 bg-white relative -top-5">
           <div className="flex justify-between items-end relative -top-16">
