@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
-    <div className="bg-slate-400 py-20 px-16 grid gap-10 min-h-scre">
+    <div className="bg-slate-400 py-20 px-16 grid gap-10 min-h-screen">
       {/*<div className="bg-black py-10 px-5 flex flex-col space-y-5">*/}
       <div className="bg-white p-6 rounded-3xl shadow-xl">
         <span className="font-semibold text-3xl">Select Item</span>
