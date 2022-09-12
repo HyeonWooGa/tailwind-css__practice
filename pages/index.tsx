@@ -5,10 +5,10 @@ const Home: NextPage = () => {
       {/*<div className="bg-black py-10 px-5 flex flex-col space-y-5">*/}
       <div className="bg-white p-6 rounded-3xl shadow-xl">
         <ul>
-          {[1, 2, 3, 4].map((i) => (
+          {[1, 2, 3, 4, 5].map((i) => (
             <div
               key={i}
-              className="flex justify-between my-2 odd:bg-blue-50 even:bg-yellow-50 first:bg-teal-50 last:bg-amber-50"
+              className="flex justify-between my-2 odd:bg-blue-200 even:bg-yellow-200 first-of-type:bg-teal-500  last-of-type:bg-amber-500"
             >
               <span className="text-gray-500">Grey Chair</span>
               <span className="font-semibold">$19</span>
