@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           Checkout
         </button>
       </div>
-      <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
+      <div className="bg-white rounded-3xl shadow-xl overflow-hidden group">
         <div className="bg-blue-500 p-6 pb-24 flex items-center justify-between">
           <span className="text-white text-2xl">Profile</span>
           <span className="text-white">Cart</span>
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
               <span className="text-sm text-gray-500">Orders</span>
               <span className="font-medium">340</span>
             </div>
-            <div className="h-24 w-24 bg-red-400 rounded-full" />
+            <div className="h-24 w-24 bg-red-400 rounded-full group-hover:bg-red-300" />
             <div className="flex flex-col items-center">
               <span className="text-sm text-gray-500">Spent</span>
               <span className="font-medium">$2,310</span>
@@ -89,6 +89,22 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
+      <form className="flex flex-col space-y-2">
+        <input
+          type="text"
+          required
+          placeholder="Username"
+          className="border p-1 peer border-gray-400 rounded-md"
+        />
+        <span className="peer-invalid:text-yellow-400  peer-valid:hidden">
+          This input is invalid
+        </span>
+        <span className="peer-valid:text-green-400  peer-invalid:hidden">
+          Awesome username
+        </span>
+        <span className="hidden peer-hover:block">Hello</span>
+        <input type="submit" value="Login" className="bg-white" />
+      </form>
     </div>
   );
 };
