@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       <div className="bg-white rounded-3xl shadow-xl overflow-hidden group">
         <div className="bg-blue-500 p-6 pb-24 flex items-center justify-between">
           <span className="text-white text-2xl">Profile</span>
-          <span className="text-white">Cart</span>
+          <span className="text-rwhite">Cart</span>
         </div>
         <div className="rounded-3xl p-7 bg-white relative -top-5">
           <div className="flex justify-between items-end relative -top-16">
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
               <span className="text-sm text-gray-500">Orders</span>
               <span className="font-medium">340</span>
             </div>
-            <div className="h-24 w-24 bg-red-400 rounded-full group-hover:bg-red-300" />
+            <div className="h-24 w-24 bg-red-400 rounded-full group-hover:bg-red-300 transition-colors" />
             <div className="flex flex-col items-center">
               <span className="text-sm text-gray-500">Spent</span>
               <span className="font-medium">$2,310</span>
@@ -105,6 +105,10 @@ const Home: NextPage = () => {
         <span className="hidden peer-hover:block">Hello</span>
         <input type="submit" value="Login" className="bg-white" />
       </form>
+      <details className="select-none open:text-white open:bg-indigo-400">
+        <summary className="cursor-pointer">토글 버튼</summary>
+        <span>까꿍</span>
+      </details>
     </div>
   );
 };
